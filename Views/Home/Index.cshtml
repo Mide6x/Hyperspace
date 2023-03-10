@@ -5,9 +5,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Hyperspace by HTML5 UP</title>
+	<title>@ViewData["Title"] - Hyperspace</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="~/css/main.css" />
 	<noscript><link rel="stylesheet" href="~/css/noscript.css" /></noscript>
 </head>
@@ -22,16 +23,25 @@
 					<li><a href="#one">Who we are</a></li>
 					<li><a href="#two">What we do</a></li>
 					<li><a href="#three">Get in touch</a></li>
-					
-					<partial name="_LoginPartial" />
 				</ul>
 			</nav>
 		</div>
 	</section>
 
+
 	<!-- Wrapper -->
 	<div id="wrapper">
-
+		<!-- Header -->
+		<header id="header">
+			<nav>
+				<ul>
+					<li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+					<li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+					<li><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+					<li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+				</ul>
+			</nav>
+		</header>
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">

@@ -1,10 +1,16 @@
 html {
   font-size: 14px;
 }
+#header {
+    display: none !important;
+}
 
 @media (min-width: 768px) {
   html {
     font-size: 16px;
+  }
+  #header {
+      display:inline !important;
   }
 }
 
