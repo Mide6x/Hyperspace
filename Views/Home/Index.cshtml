@@ -23,6 +23,7 @@
 					<li><a href="#one">Who we are</a></li>
 					<li><a href="#two">What we do</a></li>
 					<li><a href="#three">Get in touch</a></li>
+					@await Html.PartialAsync("_LoginPartial")
 				</ul>
 			</nav>
 		</div>
@@ -33,14 +34,7 @@
 	<div id="wrapper">
 		<!-- Header -->
 		<header id="header">
-			<nav>
-				<ul>
-					<li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-					<li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
-					<li><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
-					<li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
-				</ul>
-			</nav>
+			@await Html.PartialAsync("navbar")
 		</header>
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
